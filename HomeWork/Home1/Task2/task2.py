@@ -10,7 +10,7 @@ cls()
 # 123 -> 6 (1 + 2 + 3)
 # 100 -> 1 (1 + 0 + 0)
 
-number = int(input('Ведите трёхзначное число: \n'))
+number = int(input('Ведите трёхзначное число: '))
 firstNum = number // 100  
 thirdNum = number % 10   
 secondNum = (number % 100) // 10  
