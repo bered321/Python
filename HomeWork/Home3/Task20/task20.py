@@ -38,9 +38,12 @@ dictionary_russian = [{"А, В, Е, И, Н, О, Р, С, Т": "1"}, {"Д, К, Л,
     "Б, Г, Ё, Ь, Я": "3"}, {"Й, Ы": "4"}, {"Ж, З, Х, Ц, Ч": "5"}, {"Ш, Э, Ю": "8"}, {"Ф, Щ, Ъ": "10"}]
 for i in text:
     for element in dictionary_russian:
+        #print(element)
         for key in element.keys():
+            print(key)
             if i in key:
                 for x in element.values():
+                    #print(x)
                     sum += int(x)
 for i in text:
     for element in dictionary_english:
