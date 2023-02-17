@@ -507,6 +507,18 @@ cls()
 # Вывод:
 # ok
 
+# transformation = lambda x: x+1
+# values = [1, 23, 42, 22]
+# transformed_values = list(map(transformation, values))
+# if values == transformed_values:
+#     print('ok')
+# else:
+#     print('fail')
+# print(transformation(9))
+# new_transformation = transformation
+# print(new_transformation(10))
+
+
 
 # Задача No49. Решение в группах
 # Планеты вращаются вокруг звезд по эллиптическим орбитам.
@@ -532,6 +544,21 @@ cls()
 # print(*find_farthest_orbit(orbits))
 # Вывод:
 # 2.5 10
+# import math
+# def find_farthest_orbit(orbits):
+#     # my_list=[]
+#     # for orbit in orbits:
+#     #     if orbit[0]!=orbit[1]:
+#     #         s=my_list.append(math.pi*orbit[0]*orbit[1])
+#     eleptic_orbits = [orbit for orbit in orbits if orbit[0]!=orbit[1]]
+#     my_list = [math.pi*orbit[0]*orbit[1] for orbit in eleptic_orbits]
+#     max_orbit_index = my_list.index(max(my_list))
+#     return eleptic_orbits[max_orbit_index]
+# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+# print(*find_farthest_orbit(orbits))
+
+
+
 
 
 # Задача No51. Решение в группах
@@ -549,3 +576,15 @@ cls()
 # print(‘same’)
 # else:
 # print(‘different’)
+# def same_by(characteristic, objects):
+#     characteristic_list = [characteristic(x) for x in objects]
+#     for i in range(len(characteristic_list)-1):
+#         if characteristic_list[i]!=characteristic_list[i+1]:
+#             return False
+#     return True
+
+# values = [7, 5, 6, 1]                   
+# if same_by(lambda x: x % 2, values):
+#     print('same')
+# else:
+#     print('different')
